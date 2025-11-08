@@ -2,6 +2,56 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+/* -----------------------
+   Inner StickyScroll scrollbar
+   Targets only elements with class .sticky-scroll-container
+   ----------------------- */
+
+/* Webkit-based browsers (Chrome, Edge, Opera) */
+.sticky-scroll-container::-webkit-scrollbar {
+  width: 10px; /* adjust thickness */
+}
+
+.sticky-scroll-container::-webkit-scrollbar-track {
+  background: #000; /* black track */
+  border-radius: 8px;
+}
+
+.sticky-scroll-container::-webkit-scrollbar-thumb {
+  background: #222; /* dark thumb for contrast on black */
+  border-radius: 8px;
+  border: 2px solid transparent; /* gives a little breathing room */
+  background-clip: padding-box;
+}
+
+.sticky-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Optional: hide horizontal scrollbar if any (keeps vertical) */
+.sticky-scroll-container::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+/* Firefox */
+.sticky-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #222 #000; /* thumb color then track color */
+}
 
 @theme inline {
   --color-background: var(--background);
