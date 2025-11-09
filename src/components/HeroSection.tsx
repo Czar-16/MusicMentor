@@ -22,7 +22,7 @@ function HeroSection() {
 
         <div className="mt-6">
           <Link href={"/courses"}>
-            <Button>Explore courses</Button>
+            <Button className="cursor-pointer">Explore courses</Button>
           </Link>
         </div>
 
