@@ -1,6 +1,8 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
+import Instructor from "@/components/Instructor";
 import TestimonialCards from "@/components/TestimonialCards";
+import UpcomingWebinars from "@/components/UpcomingWebinars";
 import StickyScrollRevealDemo from "@/components/WhyChooseUs";
 
 import Image from "next/image";
@@ -12,6 +14,8 @@ export default function Home() {
       <FeaturedCourses />
       <StickyScrollRevealDemo />
       <TestimonialCards />
+      <UpcomingWebinars />
+      <Instructor />
     </main>
   );
 }
