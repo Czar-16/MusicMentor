@@ -23,12 +23,12 @@ function allCoursePage() {
               className="relative group/card bg-gray-800/50 backdrop-blur-md 
               dark:bg-gray-900/70 dark:border-gray-700 border-gray-800 
               w-full h-auto rounded-2xl p-6 border 
-              transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20"
+              transition-all duration-300 hover:shadow-2xl hover:shadow-white-500/20"
             >
               <CardItem
                 translateZ="50"
                 className="text-2xl font-bold text-white tracking-wide 
-                group-hover/card:text-emerald-400 transition-colors duration-300"
+                group-hover/card:text-gray-400 transition-colors duration-300"
               >
                 {course.title}
               </CardItem>

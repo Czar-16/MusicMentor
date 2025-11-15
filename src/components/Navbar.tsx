@@ -10,15 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function NavbarDemo() {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
-}
-
-function Navbar({ className }: { className?: string }) {
+function NavbarDemo({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
@@ -49,3 +41,5 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+
+export default NavbarDemo;
