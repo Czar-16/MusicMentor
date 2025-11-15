@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/navbar-menu";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function NavbarDemo() {
   return (
@@ -37,11 +38,13 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/courses">Music Production</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Contact Us"
-        ></MenuItem>
+        <Link href={"/contact"}>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Contact Us"
+          ></MenuItem>
+        </Link>
       </Menu>
     </div>
   );

@@ -80,18 +80,9 @@
       "isFeatured": true,
       "image": "/courses/music-prod.jpg"
     },
+
     {
       "id": 9,
-      "title": "Classical Music History",
-      "slug": "classical-music-history",
-      "description": "Explore the rich history of classical music from its origins to the present day.",
-      "price": 179.99,
-      "instructor": "Grace Lee",
-      "isFeatured": false,
-      "image": "/courses/classical-music.jpg"
-    },
-    {
-      "id": 10,
       "title": "Blues Guitar Techniques",
       "slug": "blues-guitar-techniques",
       "description": "Discover the techniques of blues guitar to add soul and depth to your playing.",
