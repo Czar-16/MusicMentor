@@ -24,12 +24,12 @@ function MusicMentorContactUs() {
             required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-            className="mt-2 w-full rounded-xl bg-neutral-900/50 border border-neutral-700 px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all"
+            className="mt-2 w-full rounded-xl bg-black border border-neutral-700 px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all"
           />
           <textarea
             value={message}
             placeholder="Tell us how we can help..."
-            className="mt-2 w-full rounded-xl bg-neutral-900/50 border border-neutral-700 px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all"
+            className="mt-2 w-full rounded-xl bg-black border border-neutral-700 px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all"
             required
             onChange={(e) => setMessage(e.target.value)}
             rows={5}
