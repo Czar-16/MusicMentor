@@ -10,7 +10,7 @@ function MusicMentorContactUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#020617] via-[#04102a] to-[#030216] text-white relative overflow-hidden flex items-center justify-center py-30">
       <div className="relative z-10 w-full max-w-2xl mx-auto p-8 rounded-3xl border border-neutral-700/40 bg-gradient-to-b from-white/5 to-transparent backdrop-blur-md shadow-2xl">
-        <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-white">
+        <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-gray-200">
           Contact Us
         </h1>
         <p className="text-neutral-300 mb-6">
