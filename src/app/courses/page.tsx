@@ -27,8 +27,8 @@ function allCoursePage() {
             >
               <CardItem
                 translateZ="50"
-                className="text-2xl font-bold text-white tracking-wide 
-                group-hover/card:text-gray-400 transition-colors duration-300"
+                className="text-2xl font-bold text-gray-500 tracking-wide 
+                group-hover/card:text-white transition-colors duration-300"
               >
                 {course.title}
               </CardItem>
@@ -37,7 +37,7 @@ function allCoursePage() {
                 as="p"
                 translateZ="60"
                 className="text-gray-300 text-sm max-w-sm mt-3 leading-relaxed 
-                group-hover/card:text-gray-200 transition-colors duration-300"
+                group-hover/card:text-gray transition-colors duration-300"
               >
                 {course.description}
               </CardItem>
@@ -72,7 +72,7 @@ function allCoursePage() {
                   as="button"
                   className="cursor-pointer px-5 py-2.5 rounded-xl bg-gradient-to-r from-black to-black 
                   text-white text-sm font-bold hover:scale-105 hover:shadow-lg 
-                  hover:shadow-emerald-500/50 transition-all duration-300"
+                  hover:shadow-white/50 transition-all duration-300"
                 >
                   Sign Up
                 </CardItem>
