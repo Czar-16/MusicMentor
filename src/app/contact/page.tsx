@@ -43,7 +43,6 @@ function MusicMentorContactUs() {
           <p className="text-sm text-neutral-400">We respect your privacy.</p>
         </form>
       </div>
-
       <Meteors number={100} />
     </div>
   );
