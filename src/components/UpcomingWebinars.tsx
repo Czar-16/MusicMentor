@@ -65,6 +65,7 @@ function UpcomingWebinars() {
         <div className="mt-10">
           <HoverEffect
             items={featuredWebinars.map((webinar) => ({
+              id: webinar.slug,
               title: webinar.title,
               description: webinar.description,
               link: "/",
