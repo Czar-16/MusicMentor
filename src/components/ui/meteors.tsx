@@ -3,13 +3,13 @@ import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import React from "react";
 
-export const Meteors = ({
+export const Meteors = React.memo(function Meteors({
   number,
   className,
 }: {
   number?: number;
   className?: string;
-}) => {
+}) {
   const meteors = new Array(number || 20).fill(true);
   return (
     <motion.div
@@ -21,6 +21,10 @@ export const Meteors = ({
         const meteorCount = number || 20;
         // Calculate position to evenly distribute meteors across container width
         const position = idx * (2040 / meteorCount) - 400; // Spread across 800px range, centered
+
+        // Stable variation keeps animation timings consistent across renders.
+        const seed = Math.sin(idx + 1) * 10000;
+        const variation = seed - Math.floor(seed);
 
         return (
           <span
@@ -34,12 +38,12 @@ export const Meteors = ({
               top: "-50px", // Start above the container
               left: position + "px",
 
-              animationDelay: Math.random() * 5 + "s", // Random delay between 0-5s
-              animationDuration: Math.floor(Math.random() * (10 - 5) + 5) + "s", // Keep some randomness in duration
+              animationDelay: variation * 5 + "s", // Delay between 0-5s
+              animationDuration: Math.floor(variation * 5 + 5) + "s", // Duration between 5-9s
             }}
           ></span>
         );
       })}
     </motion.div>
   );
-};
+});

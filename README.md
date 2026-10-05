@@ -1,80 +1,120 @@
 # Music Mentor
 
-A modern web application that helps users discover, learn, and practice musical instruments. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, Music Mentor provides curated courses, instructor profiles, testimonials, and upcoming webinars to guide aspiring musicians on their journey.
+A music education website built with Next.js, React, TypeScript, and Tailwind CSS. Music Mentor showcases music courses, instructors, student testimonials, and webinar topics through a responsive interface with animated backgrounds and interactive cards.
 
----
+## Screenshots
 
-## ✨ Features
+### Home
 
-- **Course Catalog** – Browse a rich collection of music courses with detailed descriptions and enrollment options.
-- **Featured Instructors** – Highlighted profiles of professional musicians and teachers.
-- **Testimonials** – Real student feedback displayed with attractive cards.
-- **Upcoming Webinars** – Integrated schedule of live webinars and events.
-- **Responsive Design** – Mobile‑first UI that works on all screen sizes.
-- **SEO Optimised** – Server‑side rendering with Next.js for fast load times and search visibility.
+![Music Mentor home page](public/screenshots/Home.png)
 
----
+### Home — additional sections
 
-## 🚀 Getting Started
+![Additional sections of the Music Mentor home page](public/screenshots/Home2.png)
+
+### Course catalog
+
+![Music Mentor course catalog](public/screenshots/courses.png)
+
+### Contact
+
+![Music Mentor contact page](public/screenshots/contactus.png)
+
+## Features
+
+- **Course discovery:** Browse courses covering instruments, vocals, songwriting, and music production, with images and descriptions.
+- **Featured content:** Explore selected courses, instructor profiles, student testimonials, and webinar topics on the home page.
+- **Interactive visuals:** 3D course cards, hover effects, scrolling animations, and meteor and wave backgrounds.
+- **Responsive layouts:** Course grids and page sections adapt to different screen sizes.
+- **Contact interface:** Email and message fields with browser validation.
+
+The project currently showcases the frontend experience. Course enrollment, user accounts, webinar registration, and contact message delivery are not connected to backend services.
+
+## Tech stack
+
+| Technology | Purpose |
+| --- | --- |
+| Next.js 16 | App Router and page rendering |
+| React 19 | UI components |
+| TypeScript 5 | Type checking |
+| Tailwind CSS 4 | Styling and responsive layouts |
+| Motion | UI animations |
+| Lucide React | Icons |
+
+## Getting started
 
 ### Prerequisites
 
-- **Node.js** (v18 or newer)
-- **npm** (or **yarn**/ **pnpm** if preferred)
+- Node.js **20.9 or newer**, as required by the project's Next.js version.
+- npm, with the included `package-lock.json`.
 
-### Installation
+### Run locally
 
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/music-mentor.git
-cd music-mentor
-
-# Install dependencies
-npm install
-```
-
-### Development
-
-Run the development server:
+From the project directory, install dependencies and start the development server:
 
 ```bash
+npm ci
 npm run dev
 ```
 
-Open your browser and navigate to `http://localhost:3000` to see the app in action.
+Open [localhost:3000](http://localhost:3000) in your browser.
 
-### Building for Production
+### Available commands
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm start` | Serve the production build |
+| `npm run lint` | Run ESLint |
+
+To run a production build locally:
 
 ```bash
-npm run build   # Create an optimized production build
-npm start       # Serve the built app
+npm run build
+npm start
 ```
 
----
+## Pages
 
-## 📂 Project Structure
+| Route | Content |
+| --- | --- |
+| `/` | Hero, featured courses, learning highlights, testimonials, webinars, and instructors |
+| `/courses` | Full course catalog |
+| `/contact` | Contact form interface |
 
+## Project structure
+
+```text
+music-mentor/
+├── public/
+│   ├── courses/                 # Course images
+│   └── screenshots/             # App screenshots used in this README
+├── src/
+│   ├── app/
+│   │   ├── contact/page.tsx      # Contact page
+│   │   ├── courses/page.tsx      # Course catalog
+│   │   ├── globals.css           # Global styles and Tailwind configuration
+│   │   ├── layout.tsx            # Shared page layout
+│   │   └── page.tsx              # Home page
+│   ├── components/
+│   │   └── ui/                   # Reusable animated UI components
+│   ├── data/
+│   │   └── music_courses.json    # Course catalog data
+│   └── lib/
+│       └── utils.ts              # Shared utilities
+├── next.config.ts
+├── package.json
+└── package-lock.json
 ```
-/music-mentor
-├─ public/                # Static assets (images, favicons, …)
-├─ src/                   # Application source code
-│   ├─ app/               # Next.js app router pages
-│   │   ├─ contact/
-│   │   ├─ courses/
-│   │   └─ …
-│   ├─ components/        # Re‑usable UI components
-│   │   ├─ FeaturedCourses.tsx
-│   │   ├─ Footer.tsx
-│   │   └─ …
-│   ├─ data/              # JSON data for courses, instructors, …
-│   └─ styles/            # Global Tailwind styles
-├─ package.json           # npm scripts & dependencies
-├─ next.config.ts         # Next.js configuration
-└─ README.md              # You are reading it!
-```
 
----
+## Customization
 
-## 📬 Contact
+- Update `src/data/music_courses.json` to change course titles, descriptions, images, and featured status.
+- Add course images to `public/courses/` and reference them with paths such as `/courses/guitar.jpg`.
+- Edit the components in `src/components/` to update home page content, instructors, testimonials, and webinar topics.
+- Adjust `src/app/globals.css` and component classes to change styling.
 
-Twitter/X : @itsCzar16
+## Contact
+
+Find the creator on [X — @itsCzar16](https://twitter.com/itsCzar16).

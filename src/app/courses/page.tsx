@@ -16,7 +16,7 @@ function allCoursePage() {
           <CardContainer
             key={course.title}
             className="inter-var animate-slide-up"
-            style={{ animationDelay: `${index * 0.1}s` }}
+            // style={{ animationDelay: `${index * 0.1}s` }}
           >
             {/* Card */}
             <CardBody

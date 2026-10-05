@@ -15,7 +15,7 @@ function MusicMentorContactUs() {
         </h1>
         <p className="text-neutral-300 mb-6">
           Have questions about courses, pricing, or events? Send us a message
-          and we'll respond soon.
+          and we&apos;ll respond soon.
         </p>
         <form className="space-y-4 mt-4">
           <input

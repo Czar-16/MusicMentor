@@ -11,10 +11,10 @@ const instructors = [
   },
   {
     id: 2,
-    name: "Czar16",
+    name: "Mark",
     designation: "Software Developer",
     image:
-      "https://pbs.twimg.com/profile_images/1748431175985819648/nwIj3pkg_400x400.jpg",
+      "https://i.pinimg.com/736x/c2/e6/fb/c2e6fba02a308ee3cb10330f8e98be8c.jpg",
   },
   {
     id: 3,
